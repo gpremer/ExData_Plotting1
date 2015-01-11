@@ -1,4 +1,9 @@
 library(dplyr)
+
+### 
+### Since the data file is large, it is not uploaded to github. The script expects that you extract the zip in it's working directory. 
+###
+
 power <- read.csv("household_power_consumption.txt", sep=";", header=TRUE,stringsAsFactors=FALSE,na.strings="?")
 power_t <- tbl_df(power)
 
